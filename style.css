@@ -1,0 +1,248 @@
+
+@font-face{
+font-family: U1;
+src: url(rsc/Ubuntu.otf);
+}
+
+body{
+	font-family:  U1, Arial;
+	overflow-y: scroll;
+}
+div{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#wrapAll{
+	margin: 20px auto 0 auto;
+	width: 1320px;
+}
+#mapWrap{
+	vertical-align: top;
+	width: 800px;
+	display: inline-block;
+}
+
+
+#map, #wrap{
+	width: 800px;
+	height: 500px;
+}
+#map{
+	border: 1px solid #EAEAEA;
+}
+#wrap{
+	position: relative;
+}
+
+#loading{
+	position: absolute;
+	top: 200px;
+	left: 350px;
+	display: none;
+	width: 134px;
+	height: 100px;
+	background: url(rsc/loading.gif);
+}
+.none_active{
+	fill: #aaa;
+	stroke: white;
+	stroke-width: 0.5;
+}
+.active_loc{
+	fill: #85A5CC;
+	stroke: white;
+}
+
+#msg{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+#msg p{
+	margin: 0 0 20px 0;
+	padding: 0;
+	display: inline;
+}
+
+#in, #out{
+	border: none;
+	z-index: 10;
+	position: absolute;
+	left:10px;
+	height: 30px;
+	width: 30px;
+	border-radius: 8px;
+	
+	outline: none;
+	background: #09a5ff;
+	font-weight: bold;
+	font-size: 20px;
+}
+#in{
+	top: 10px;
+}
+#out{
+	top: 45px;
+}
+
+#in:hover, #out:hover{
+	background: #79D0FF;
+}
+
+.mapLink, .mapLink:visited{
+	color:#09a5ff;
+}
+.mapLink:hover{
+	color:#79D0FF;
+}
+
+/* wykres div */
+
+#wykWrap{
+	margin-left: 10px;
+	width: 500px;
+	display: inline-block;
+}
+
+
+/* wykres słupkowy */
+.slupek{
+    height: 30px;
+    border: 1px solid black;
+    border-left: 0px;
+}
+.labelka{
+	text-align: right;
+	font-size: 12px;
+}
+.slupekDiv{
+    border-left: 1px solid black;
+    padding: 10px 0 5px 0;
+
+}
+.slupekWraper{
+      margin: 20px 0 20px 0;
+
+}
+
+
+/* piechart */
+.legend{
+	vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 5px;
+
+}
+.legendLabel{
+	vertical-align: middle;
+	display: inline-block;
+}
+.slice stroke{
+    background: white;
+}
+#search{
+	line-height: 25px;
+	height: 25px;
+	margin-bottom: 10px;
+	position: relative;	
+}
+
+#stext{
+	font-family:  U1;
+	vertical-align: top;
+	border: 1px solid #AAA;
+	height: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 4px;
+	outline-color: #edbe01;
+	margin-right: 5px;
+
+}
+
+#searchSubmit{
+	height: 25px;
+	width: 25px;
+	background: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	background-image: url(rsc/search.png);
+	border: 1px solid #AAA;
+	border-radius: 4px;
+	outline: none;
+	vertical-align: top;
+}
+#searchSubmit:hover{
+	background-color: #EEE;
+}
+#searchSubmit:active{
+border-color: #edbe01;
+}
+
+#searchMsg{
+	display: none;
+	font-size: 14px;
+	vertical-align: top;
+	margin-top: 1px;
+}
+#formDiv{
+	display: inline-block;
+}
+#menuBtn{
+	outline: none;
+	margin: 0;
+	padding: 0px;
+	height: 24px;
+	width: 80px;
+	vertical-align: top;
+	display: inline-block;
+	border: 1px solid #AAA;
+	background: #EEE;;
+	border-radius: 4px;
+
+}
+#menu{
+	position: absolute;
+	display: none;
+	top: 30px;
+	
+	height: 0;
+	width: 0;
+	background: #F9F9F9;
+	border: 1px solid #DDD;
+	z-index: 2222222;
+
+}
+#menuContent{
+	display:none;
+	padding: 10px;
+}
+#menuWrap{
+	margin-left: 50px;
+	display: inline-block;
+	position: relative;
+}
+
+select {
+	margin-left: 4px;
+	font-family: U1;
+	font-size: 14px;
+  background: #555;
+  color: white;
+  outline: none;
+  width: 200px;
+  height: 25px;
+  border: 1px solid #444;
+  border-radius: 4px;
+ }
+
+.checkbox{
+ 	width: 20px;
+	height: 20px;
+ }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D3.JS Visualizer</title>
+        <link rel="stylesheet" media="screen" href="style.css">
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+         <script type="text/javascript" src="js/d3.js"></script>
+        <script type="text/javascript" src="js/skrypt.js"></script>
+    </head>
+    <body>
+    	<div id="wrapAll">
+			
+    		<div id='mapWrap'>
+    			<div id='search'>
+                    <div id='formDiv'>
+
+                        <form id='searchForm'><input type='text' id='stext' /><button id='searchSubmit' type='submit'></button></form>
+                    </div>
+                    <div id='searchMsg'>Not found...</div>
+                    <div id='menuWrap'>
+                        <button id='menuBtn'>MENU</button>
+                        <div id='menu'>
+                            <div id='menuContent'>
+                                <table>
+                                    <tr>
+                                        <td>Charts data:</td>
+                                        <td>
+                                            <select id='graphData'>
+                                                <option>Test option</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pie chart:</td>
+                                        <td><input type='checkbox' name='pie' checked="checked" class='checkbox'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bar chart:</td>
+                                        <td><input type='checkbox' name='bar' checked="checked" class='checkbox'/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Map chart:</td>
+                                        <td><input type='checkbox' name='map' class='checkbox'/></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    			
+                <div id="msg"> 
+    				<a href='all' class='mapLink'>All</a>
+    			</div>
+    			<div id='wrap'>
+    				<button id='in'>+</button><button id='out'>-</button>
+    				<div id='loading'></div>
+					<div id="map">
+						
+					</div>
+    			</div>
+    		</div>
+
+
+    		<div id='wykWrap'>
+				<div id='wykresy'></div>
+			</div>
+    	</div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+[{
+"country" : "AFG",
+"region" : "Badakhshan",
+"fieldLabel" : "Divorced",
+"value" : 13
+},
+{
+"country" : "AFG",
+"region" : "Badakhshan",
+"fieldLabel" : "Married",
+"value" : 18
+},{
+"country" : "AFG",
+"region" : "Badakhshan",
+"fieldLabel" : "Single",
+"value" : 30
+},{
+"country" : "AFG",
+"region" : "Badakhshan",
+"fieldLabel" : "Widowed",
+"value" : 5
+}]
